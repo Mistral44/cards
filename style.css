@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: green;
+}
+
+.cards-block {
+	float: left;
+	width: calc(100% - 40px);
+	margin: 20px 20px 10px 20px;
+	padding: 20px 0 0 20px;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+
+.cards-block ul li {
+	float: left;
+	margin: 0 20px 20px 0;
+	height: 120px;
+	width: 80px;
+	list-style: none;
+	background-color: #FFF;
+	border: 1px solid #000;
+	border-radius: 10px;
+	cursor: pointer;
+	text-align: center;
+	font-size: 40px;
+	position: relative;
+}
+
+.cards-block-hearts ul li,
+.cards-block-diamonds ul li{
+	color: red;
+}
+
+.second {
+	height: 120px;
+	width: 80px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	background-image: url(img/back.jpg);
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+
+.top-index {
+	position: absolute;
+	font-size: 15px;
+	left: 4px;
+	top: 2px;
+}
+
+.middle-index {
+	line-height: 120px;
+}
+
+.bottom-index {
+	position: absolute;
+	font-size: 15px;
+	right: 4px;
+	bottom: 2px;
+	transform: rotate(180deg);
+}
+
+.back {
+	opacity: 1;
+}
